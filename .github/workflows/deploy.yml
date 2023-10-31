@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
       - name: Load & cache dependencies
         id: cache-deps
-        uses: ./09-custome-actions/.github/actions/cached-deps/
+        uses: ./github-action-training/09-custome-actions/.github/actions/cached-deps/action.yml
         with:
           caching: 'false'
       - name: Output information
