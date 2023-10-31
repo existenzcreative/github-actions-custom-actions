@@ -3,7 +3,7 @@ description: 'Get the dependies and cache them for future use'
 inputs:
   caching:
     description: 'Whether to use caching or not'
-    required: true
+    required: false
     default: 'true'
 outputs:
   used-cache:
