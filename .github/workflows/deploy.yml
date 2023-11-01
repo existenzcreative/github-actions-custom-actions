@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+        with:
+          respository: ${{ github.repository }}
+          path: actions/deploy-s3-javascript
       - name: Load & cache dependencies
         id: cache-deps
         uses: ./.github/actions/cached-deps/
